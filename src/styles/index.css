@@ -87,12 +87,7 @@ p{
       .video::-webkit-media-controls-panel{
         display:  none;
       }
-     /* .checked input[type="radio"], .unchecked input[type="radio"]{
-        appearance: none;
-        justify-content: center;
-        align-items: center;
-
-      }  */
+  
       .checked input[type="radio"]:checked:before,       .unchecked input[type="radio"]:checked:before {
         content: " \2714";
         width: 16px;

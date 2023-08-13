@@ -112,7 +112,9 @@ function Setting() {
     </div>
 
 
-                  <Table />
+                <div className="max-w-[100%] overflow-x-scroll">
+                <Table />
+                </div>
 
 
 

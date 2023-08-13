@@ -69,7 +69,7 @@ const PaymentMethod = () => {
 
           </div>
           <div className="w-4 h-4 rounded-[50%] border-1 border-borderColor flex justify-center items-center">
-            <input type='radio' defaultChecked  className="accent-primary-200  p-2 w-4 h-4  rounded-[50%]  outline-0 " name='card'
+            <input type='checkbox' defaultChecked  className="accent-primary-200  p-2 w-4 h-4  rounded-[50%]  outline-0 " name='card'
             />
             
             </div>
@@ -87,7 +87,7 @@ const PaymentMethod = () => {
 
           </div>
           <div>        
-                        <input type='radio'  className="accent-primary-200  p-2 w-4 h-4  rounded-[50%] " name='card'/>
+                        <input type='checkbox'  className="accent-primary-200  p-2 w-4 h-4  rounded-[50%] " name='card'/>
           </div>
         </div>
 

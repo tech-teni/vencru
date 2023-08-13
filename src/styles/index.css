@@ -88,18 +88,7 @@ p{
         display:  none;
       }
   
-      .checked input[type="radio"]:checked:before,       .unchecked input[type="radio"]:checked:before {
-        content: " \2714";
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: #7F56D9;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
+  
     
 
     }

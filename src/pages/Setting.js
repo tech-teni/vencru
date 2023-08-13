@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Table from "../components/Table";
 function Setting() {
   return (
-    <div className="bg-background min-h-screen m-0">
+    <div className="bg-background min-h-screen m-0 overflow-x-hidden">
       <Navbar />
       <div className="">
         <Sidebar />

@@ -7,10 +7,12 @@
 *{
     @apply m-0 p-0 box-border 
 }
+
 body{
     @apply bg-background overflow-x-hidden w-[100%]
 
 }
+
 /* navbar */
 .nav-button{
     @apply border-y-1 border-borderColor py-2 border-l-1 px-4 bg-white text-navcolor text-sm min-w-fit	
@@ -27,49 +29,23 @@ body{
 .side-bar-link{
     @apply mb-0 hover:bg-background hover:rounded-lg  pl-3 pr-0 py-[5px] w-[100%]
 }
-
+.side-bar-link a{
+    @apply flex justify-between items-center gap-3 text-navcolor text-base
+    
+}
+.side-bar-text{
+    @apply mt-[4px] text-base
+    
+}
 
 /* section  */
 .section-header{
     @apply text-lg  text-black
 }
 
-@layer utilities {
-    @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
-
-
-  
-      .video::-webkit-media-controls-panel{
-        display:  none;
-      }
-
-
-      /* video::-webkit-media-controls-play-button {
-        display: block !important;
-        background-color: rgb(255, 255, 255, 30%s);
-        width: 40px;
-        height: 40px;
-      } */
-    }
-  }
 
 
 
-
-input[type='checkbox']{
-    @apply border-1 border-borderColor outline-0 
- 
-}
 
 p{
     @apply text-sm  text-grey font-normal
@@ -85,9 +61,58 @@ p{
     @apply  bg-primary-300 border-primary-100 border-1 rounded-lg flex justify-between
 }
 
+
 .unchecked{
     @apply  bg-white border-shadow border-1 rounded-lg flex justify-between text-black
 }
+
+
+/* end of section */
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+  
+
+  
+      .video::-webkit-media-controls-panel{
+        display:  none;
+      }
+     /* .checked input[type="radio"], .unchecked input[type="radio"]{
+        appearance: none;
+        justify-content: center;
+        align-items: center;
+
+      }  */
+      .checked input[type="radio"]:checked:before,       .unchecked input[type="radio"]:checked:before {
+        content: " \2714";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #7F56D9;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+    }
+  }
+
+
+
+
 
 /* table */
 th{
@@ -106,13 +131,7 @@ td{
    
 }
 
-
-
-
-
-
-
-
+/* end of table */
 
 .mobile-pad{
     @apply  pl-[5%] pr-[2%]

@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const Table = () => {
+    const [checkAll, setCheckAll]=useState()
+
+
   return (
 
 
@@ -9,7 +12,7 @@ const Table = () => {
     <table className="w-[100%] bg-white  border-shadow shadow border-1 mb-[200px] rounded-lg">
     <thead className=''>
     <tr className=''>
-    <th className='flex items-center gap-2  min-w-[228px]'><input type='checkbox' className='w-3 h-3' /> <span>Invoice</span> <img src='./images/descending.svg' alt='descending'/></th>
+    <th className='flex items-center gap-2  min-w-[228px]'><input type='checkbox' className='w-3 h-3'  /> <span>Invoice</span> <img src='./images/descending.svg' alt='descending'/></th>
     <th className='min-w-[128px]'>Amount</th>
     <th className='min-w-[128px]'>Date</th>
     <th className='min-w-[128px]'>Status</th>

@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import VideoPlayer from '../../reusable/VideoPlayer'
 import Footer from '../Footer'
+import { Link } from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -20,18 +21,19 @@ const location = useLocation()
         </div>
 
           <ul className='mt-3 w-[97%]'>
-          <li className='side-bar-link'>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/home.svg' alt='home' className='' /></div> <span className='side-bar-text'>Home</span></div> </a></li>
-          <li className='side-bar-link '>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/metrics.svg' alt='dashboard' className='' /></div> <span className='side-bar-text'>Dashboard</span></div> <span className='rounded-2xl bg-notificationColor w-10 h-7 flex items-center justify-center  text-sm  mr-3'>10</span></a></li>
-          <li className='side-bar-link '>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/stack-file.svg' alt='home' className=''/></div> <span className='side-bar-text'>Projects</span></div> </a></li>
-          <li className='side-bar-link '>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/task.svg' alt='home' className=''/></div> <span className='side-bar-text'>Task</span></div> </a></li>
-          <li className='side-bar-link '>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/flag.svg' alt='home' className=''/></div> <span className='side-bar-text'>Reporting</span></div> </a></li>
-          <li className='side-bar-link '>  <a href='' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/user.svg' alt='home' className=''/></div> <span className='side-bar-text'>Users</span></div> </a></li>
+            
+          <li className='side-bar-link'>  <Link to='/' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/home.svg' alt='home' className='' /></div> <span className='side-bar-text'>Home</span></div> </Link></li>
+          <li className='side-bar-link '>  <Link to='/' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/metrics.svg' alt='dashboard' className='' /></div> <span className='side-bar-text'>Dashboard</span></div> <span className='rounded-2xl bg-notificationColor w-10 h-7 flex items-center justify-center  text-sm  mr-3'>10</span></Link></li>
+          <li className='side-bar-link '>  <Link to='/' clLinkssName=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/stack-file.svg' alt='home' className=''/></div> <span className='side-bar-text'>Projects</span></div> </Link></li>
+          <li className='side-bar-link '>  <Link to='/' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/task.svg' alt='home' className=''/></div> <span className='side-bar-text'>Task</span></div> </Link></li>
+          <li className='side-bar-link '>  <Link to='/' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/flag.svg' alt='home' className=''/></div> <span className='side-bar-text'>Reporting</span></div> </Link></li>
+          <li className='side-bar-link '>  <Link to='/' className=' '><div className='flex items-center gap-3'><div className='w-5'><img src='./images/user.svg' alt='home' className=''/></div> <span className='side-bar-text'>Users</span></div> </Link></li>
 
           </ul>
 
           <ul className='mt-3 mb-2'>
-          <li className='side-bar-link '>  <a href='' className=''><div className='flex items-center gap-3'><img src='./images/support.svg' alt='home' /> <span className='mt-[4px] text-base'>Support</span></div> </a></li>
-          <li className={location.pathname === '/' || location.pathname === '/settings'? 'side-bar-link bg-background rounded-lg':'side-bar-link'}>  <a href='' className=''><div className='flex items-center gap-3'><img src='./images/settings.svg' alt='home' /> <span className='mt-[4px] text-base'>Settings</span></div> </a></li>
+          <li className='side-bar-link '>  <Link to='/' className=''><div className='flex items-center gap-3'><img src='./images/support.svg' alt='home' /> <span className='mt-[4px] text-base'>Support</span></div> </Link></li>
+          <li className={location.pathname === '/' || location.pathname === '/settings'? 'side-bar-link bg-background rounded-lg':'side-bar-link'}>  <Link to='/' className=''><div className='flex items-center gap-3'><img src='./images/settings.svg' alt='home' /> <span className='mt-[4px] text-base'>Settings</span></div> </Link></li>
 
           </ul>
 
@@ -43,7 +45,7 @@ const location = useLocation()
            <VideoPlayer /> 
       <div className='flex gap-3 mt-2'>
         <p className='text-[12px] '>Dismiss</p>
-        <a className='text-sm text-[#6941C6]'>What’s new?</a>
+        <Link  to='/' className='text-sm text-[#6941C6]'>What’s new?</Link>
       </div>
        </div>
           <Footer />

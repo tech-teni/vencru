@@ -57,7 +57,7 @@ function Setting() {
                 </div>
               </div>
             </div>
-            <div className="sub-container flex flex-col gap-4 mobile-pad   min-[787px]:flex-row w-[100%]">
+            <div className="sub-container flex flex-col gap-4 mobile-pad   md:flex-row w-[100%]">
               <div className="min-[787px]:w-[28%] xl:w-[20%]">
                 <h5 className="text-base text-navcolor font-medium">
                   Card details

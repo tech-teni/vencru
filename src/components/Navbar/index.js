@@ -8,7 +8,7 @@ const Navbar = () => {
       <h1>Untitled UI</h1>
      </div>
 
-     <div className=''>
+     <div className='mr-[4%]'>
       <img src='./images/mobile-navigator.svg' alt='navigator'/>
      </div>
     </div>
